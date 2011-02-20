@@ -1,0 +1,11 @@
+[user]
+username=
+company=
+
+[api]
+key=
+secret=
+token=
+
+[applet]
+refreshTimeout=5

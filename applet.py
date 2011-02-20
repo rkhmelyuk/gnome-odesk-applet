@@ -52,7 +52,7 @@ class oDeskApplet:
         label = gtk.Label()
         label.set_markup('   <b>Chart:</b>  ')
         ev_hbox.add(label)
-        self.hbox.add(self.chart)
+        ev_hbox.add(self.chart)
 
         applet.connect("destroy", self.cleanup)
         applet.show_all()

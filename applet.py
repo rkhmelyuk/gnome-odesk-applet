@@ -57,12 +57,12 @@ class oDeskApplet:
         applet.connect("destroy", self.cleanup)
         applet.show_all()
 
-        gobject.timeout_add(100, self.refreshHours)
         gobject.timeout_add_seconds(self.refresh_timeout, self.refreshHoursTimeout)
+        gobject.timeout_add_seconds(30, self.refreshHours)
 
     def refreshHoursTimeout(self):
-        self.refreshHours()
         gobject.timeout_add_seconds(self.refresh_timeout, self.refreshHoursTimeout)
+        self.refreshHours()
 
     def refreshHours(self):
         date = datetime.date.today()

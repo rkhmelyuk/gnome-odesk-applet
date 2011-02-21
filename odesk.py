@@ -89,8 +89,8 @@ class oDesk:
         xml = minidom.parse(c)
 
         onlinePresence = xml.getElementsByTagName('online_presence')[0].firstChild.nodeValue
-        chartUrl = "http://chart.apis.google.com/chart?chs=70x16&cht=ls&chco=00FF00" + \
-                   "&chf=bg,lg,90,111111,0,333333,1&chm=B,00FF00,0,0,0&chd=t:" + onlinePresence
+        chartUrl = "http://chart.apis.google.com/chart?chs=70x22&cht=ls&chco=00FF00" + \
+                   "&chf=bg,lg,90,000000&chm=B,00FF00,0,0,0&chd=t:" + onlinePresence
 
         c = urllib2.urlopen(chartUrl)
         chart = open('/tmp/chart.png', 'w')

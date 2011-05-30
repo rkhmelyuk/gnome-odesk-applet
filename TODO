@@ -1,0 +1,3 @@
+
+    * Avoid hardcoded paths.
+    * Fix issue with hours reset when new date started.

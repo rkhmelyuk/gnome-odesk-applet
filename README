@@ -1,12 +1,15 @@
 
-oDesk GNOME applet, shows number of closed hours and chart.
+oDesk GNOME applet, shows number of closed hours today and this week, also shows familiar odesk chart.
 
-May need to install python-gnomeapplet
-
-$ sudo apt-get install python-gnomeapplet
+It has hardcoded my paths in files:
+ * GNOME_odesk_Factory.server
+ * settings.py
 
 Setup:
  1. create odesk.properties file and fill information
  2. edit GNOME_odesk_Factory.server to write correct full path to the applet.py file.
  3. copy GNOME_odesk_Factory.server to /usr/lib/bonobo/servers
  4. add chart
+
+May need to install python-gnomeapplet, if fails to run:
+ $ sudo apt-get install python-gnomeapplet

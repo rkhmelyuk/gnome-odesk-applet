@@ -1,6 +1,10 @@
 
 oDesk GNOME applet, shows number of closed hours and chart.
 
+May need to install python-gnomeapplet
+
+$ sudo apt-get install python-gnomeapplet
+
 Setup:
  1. create odesk.properties file and fill information
  2. edit GNOME_odesk_Factory.server to write correct full path to the applet.py file.

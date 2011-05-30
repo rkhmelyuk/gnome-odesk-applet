@@ -7,6 +7,7 @@ import gtk.gdk
 import pygtk
 import datetime
 import settings
+import sys
 
 from odesk import oDesk
 
@@ -50,7 +51,7 @@ class oDeskApplet:
         
         self.hbox.add(self.ev_box)
         label = gtk.Label()
-        label.set_markup('   <b>Chart:</b>  ')
+        label.set_markup('   ')
         ev_hbox.add(label)
         ev_hbox.add(self.chart)
 
@@ -110,13 +111,13 @@ if __name__ == '__main__':
                                gnomeapplet.Applet.__gtype__,
                                "Show odesk hours", "1.0", factory)
 
-    #if len(sys.argv) == 2 and sys.argv[1] == "run-in-window":
-    #    main_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
-    #    main_window.set_title("Python Applet")
-    #    main_window.connect("destroy", gtk.mainquit)
-    #    app = gnomeapplet.Applet()
-    #    factory(app, None)
-    #    app.reparent(main_window)
-    #    main_window.show_all()
-    #    gtk.main()
-    #    sys.exit()
+#    if len(sys.argv) == 2 and sys.argv[1] == "run-in-window":
+#        main_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+#        main_window.set_title("Python Applet")
+#        main_window.connect("destroy", gtk.mainquit)
+#        app = gnomeapplet.Applet()
+#        factory(app, None)
+#        app.reparent(main_window)
+#        main_window.show_all()
+#        gtk.main()
+#        sys.exit()

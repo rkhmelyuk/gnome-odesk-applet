@@ -13,3 +13,5 @@ Setup:
 
 May need to install python-gnomeapplet, if fails to run:
  $ sudo apt-get install python-gnomeapplet
+
+BTW: code is awful as this is my first app on python (blush)
